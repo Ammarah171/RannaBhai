@@ -14,6 +14,7 @@ app.use((req, res, next) => {
 })
 
 //routes
+//currently working here
 app.use('/api/workouts', workoutRoutes)
 
 //listen for requests
