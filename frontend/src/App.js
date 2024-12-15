@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 //pages & components
-import Home from './pages/Home'
+import Trend from './pages/TrendingRecipes'
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
           <Routes>
             <Route
               path='/'
-              element={<Home />}
+              element={<Trend />}
             />
           </Routes>
         </div>
