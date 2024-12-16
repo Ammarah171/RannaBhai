@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Cards</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.19/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            color: #333;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 15px;
+        }
+
+        .card-content h2 {
+            font-size: 1.5rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .card-content p {
+            font-size: 1rem;
+            color: #666;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar bg-base-100 pb-4 rounded-md pr-4 pl-4">
+            <div class="flex-1">
+              <a class="btn btn-ghost text-xl w-32">RannaBhai</a>
+            </div>
+            <div class="flex-none gap-2">
+              <div class="form-control">
+                <input type="text" id="searchInput" placeholder="Search" class="input input-bordered w-24 md:w-auto" />
+              </div>
+              <button id="searchButton" class="btn btn-primary">Search</button>
+            </div>
+          </div>
+    </div>
+    <div class="container">
+        <div class="header">
+            <h1>Recipes</h1>
+        </div>
+        <div id="cards" class="cards">
+            <!-- Recipe cards will be injected here -->
+        </div>
+    </div>
+
+    <script>
+        const apiURL = "infos.json";
+        let allCategories = []; // To store the fetched categories
+
+        // Fetch data from infos.json and display it initially
+        async function fetchCategories() {
+            try {
+                const response = await fetch(apiURL);
+                const data = await response.json();
+                allCategories = data.categories;
+                displayCategories(allCategories);
+            } catch (error) {
+                console.error("Error fetching categories:", error);
+            }
+        }
+
+        // Function to display categories
+        function displayCategories(categories) {
+            const cardsContainer = document.getElementById("cards");
+            cardsContainer.innerHTML = ""; // Clear previous content
+            categories.forEach(category => {
+                const cardHTML = `
+                    <div class="card">
+                        <img src="${category.strCategoryThumb}" alt="${category.strCategory}">
+                        <div class="card-content">
+                            <h2>${category.strCategory}</h2>
+                            <p>${category.strCategoryDescription.slice(0, 100)}...</p>
+                            <p><strong>Cook Time:</strong> ${category.cookTime}</p>
+                            <p><strong>Calories:</strong> ${category.calories}</p>
+                        </div>
+                    </div>
+                `;
+                cardsContainer.insertAdjacentHTML("beforeend", cardHTML);
+            });
+        }
+
+        // Search functionality
+        function searchCategories() {
+            const searchInput = document.getElementById("searchInput").value.toLowerCase();
+            const filteredCategories = allCategories.filter(category =>
+                category.strCategory.toLowerCase().includes(searchInput)
+            );
+            displayCategories(filteredCategories);
+        }
+
+        // Event listeners
+        document.getElementById("searchButton").addEventListener("click", searchCategories);
+        document.getElementById("searchInput").addEventListener("input", searchCategories);
+
+        // Fetch categories on page load
+        fetchCategories();
+    </script>
+</body>
+</html>
