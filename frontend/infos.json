@@ -1,0 +1,117 @@
+{
+    "categories": [
+      {
+        "idCategory": "1",
+        "strCategory": "Beef",
+        "strCategoryThumb": "https://www.themealdb.com/images/category/beef.png",
+        "strCategoryDescription": "Beef is the culinary name for meat from cattle, particularly skeletal muscle.",
+        "cookTime": "45 minutes",
+        "calories": "250-350 kcal per serving"
+      },
+      {
+        "idCategory": "2",
+        "strCategory": "Chicken",
+        "strCategoryThumb": "https://www.themealdb.com/images/category/chicken.png",
+        "strCategoryDescription": "Chicken is the most common type of poultry in the world.",
+        "cookTime": "30 minutes",
+        "calories": "200-300 kcal per serving"
+      },
+      {
+        "idCategory": "3",
+        "strCategory": "Dessert",
+        "strCategoryThumb": "https://www.themealdb.com/images/category/dessert.png",
+        "strCategoryDescription": "Dessert is a course that concludes a meal.",
+        "cookTime": "20-60 minutes",
+        "calories": "300-500 kcal per serving"
+      },
+      {
+        "idCategory": "4",
+        "strCategory": "Lamb",
+        "strCategoryThumb": "https://www.themealdb.com/images/category/lamb.png",
+        "strCategoryDescription": "Lamb is meat from a young sheep.",
+        "cookTime": "50 minutes",
+        "calories": "350-450 kcal per serving"
+      },
+      {
+        "idCategory": "5",
+        "strCategory": "Miscellaneous",
+        "strCategoryThumb": "https://www.themealdb.com/images/category/miscellaneous.png",
+        "strCategoryDescription": "Miscellaneous includes a variety of meals.",
+        "cookTime": "Varies",
+        "calories": "250-400 kcal per serving"
+      },
+      {
+        "idCategory": "6",
+        "strCategory": "Pasta",
+        "strCategoryThumb": "https://www.themealdb.com/images/category/pasta.png",
+        "strCategoryDescription": "Pasta is a type of Italian food typically made from durum wheat.",
+        "cookTime": "25 minutes",
+        "calories": "200-400 kcal per serving"
+      },
+      {
+        "idCategory": "7",
+        "strCategory": "Pork",
+        "strCategoryThumb": "https://www.themealdb.com/images/category/pork.png",
+        "strCategoryDescription": "Pork is the culinary name for meat from a pig.",
+        "cookTime": "40 minutes",
+        "calories": "300-400 kcal per serving"
+      },
+      {
+        "idCategory": "8",
+        "strCategory": "Seafood",
+        "strCategoryThumb": "https://www.themealdb.com/images/category/seafood.png",
+        "strCategoryDescription": "Seafood is any form of sea life regarded as food by humans.",
+        "cookTime": "30 minutes",
+        "calories": "200-350 kcal per serving"
+      },
+      {
+        "idCategory": "9",
+        "strCategory": "Side",
+        "strCategoryThumb": "https://www.themealdb.com/images/category/side.png",
+        "strCategoryDescription": "A side dish is a food served alongside the main dish.",
+        "cookTime": "10-20 minutes",
+        "calories": "150-250 kcal per serving"
+      },
+      {
+        "idCategory": "10",
+        "strCategory": "Starter",
+        "strCategoryThumb": "https://www.themealdb.com/images/category/starter.png",
+        "strCategoryDescription": "A starter is a small dish served before the main meal.",
+        "cookTime": "10-15 minutes",
+        "calories": "100-200 kcal per serving"
+      },
+      {
+        "idCategory": "11",
+        "strCategory": "Vegan",
+        "strCategoryThumb": "https://www.themealdb.com/images/category/vegan.png",
+        "strCategoryDescription": "Vegan meals contain no animal products.",
+        "cookTime": "20-30 minutes",
+        "calories": "150-300 kcal per serving"
+      },
+      {
+        "idCategory": "12",
+        "strCategory": "Vegetarian",
+        "strCategoryThumb": "https://www.themealdb.com/images/category/vegetarian.png",
+        "strCategoryDescription": "Vegetarian meals exclude meat but may include dairy and eggs.",
+        "cookTime": "25-35 minutes",
+        "calories": "150-350 kcal per serving"
+      },
+      {
+        "idCategory": "13",
+        "strCategory": "Breakfast",
+        "strCategoryThumb": "https://www.themealdb.com/images/category/breakfast.png",
+        "strCategoryDescription": "Breakfast is the first meal of the day.",
+        "cookTime": "15-20 minutes",
+        "calories": "200-400 kcal per serving"
+      },
+      {
+        "idCategory": "14",
+        "strCategory": "Goat",
+        "strCategoryThumb": "https://www.themealdb.com/images/category/goat.png",
+        "strCategoryDescription": "Goat meat is a lean source of protein.",
+        "cookTime": "60 minutes",
+        "calories": "350-450 kcal per serving"
+      }
+    ]
+  }
+  
