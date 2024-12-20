@@ -1,0 +1,29 @@
+{
+    "categories": [
+      {
+        "recipeName": "Grilled Chicken Salad",
+        "strCategoryThumb": "https://www.themealdb.com/images/media/meals/xyz123.jpg",
+        "strCategoryDescription": "A healthy salad with grilled chicken and fresh vegetables.",
+        "cookTime": "25 minutes",
+        "calories": "350 kcal",
+        "ingredients": ["Chicken Breast", "Lettuce", "Tomatoes", "Cucumbers", "Olive Oil"]
+      },
+      {
+        "recipeName": "Pasta Carbonara",
+        "strCategoryThumb": "https://www.themealdb.com/images/media/meals/abc456.jpg",
+        "strCategoryDescription": "A classic Italian pasta dish with eggs, cheese, pancetta, and pepper.",
+        "cookTime": "30 minutes",
+        "calories": "500 kcal",
+        "ingredients": ["Spaghetti", "Eggs", "Parmesan Cheese", "Pancetta", "Black Pepper"]
+      },
+      {
+        "recipeName": "Vegetable Stir Fry",
+        "strCategoryThumb": "https://www.themealdb.com/images/media/meals/def789.jpg",
+        "strCategoryDescription": "A quick and colorful vegetable stir fry with soy sauce.",
+        "cookTime": "20 minutes",
+        "calories": "250 kcal",
+        "ingredients": ["Broccoli", "Carrots", "Bell Peppers", "Soy Sauce", "Garlic"]
+      }
+    ]
+  }
+  
